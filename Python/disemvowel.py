@@ -26,4 +26,11 @@ def disemvowel(string):
 
 return "".join([char if char not in ['a','e','i','o','u', 'A','E','I','O','U'] 
                     else "" for char in string])
+#Clever Solution
+def disemvowel(string):
+    return string.translate(None, 'aeiuoAEIOU')
 
+
+import re
+def disemvowel(string):
+    return re.sub(r"[aeiouAEIOU]", "", string)
