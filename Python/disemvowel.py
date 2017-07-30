@@ -13,8 +13,7 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 #My Solution
 def disemvowel(string):
    
- ##   return "".join([char if char not in ['a','e','i','o','u'] 
-  ##                  else "" for char in string])
+
     st = ""
     for char in string:
         if char not in  ['a','e','i','o','u','A','E','I','O','U'] :
